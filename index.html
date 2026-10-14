@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>TEST</title>
+    <h1>TEST EX</h1>
+    <style>
+      .col {
+        color: #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>body text</h2>
+    <h3 id="evils">evils: <span id="evilclicks"></span>0</h3>
+    <button id=evilbutton>text</button>
+    <script>
+      evilclicks = 0;
+      function evil(){
+        evilclicks += 1;
+      }
+      $('evilbutton').addEventListener('click', () => evil());
+    </script>
+  </body>
+</html>
